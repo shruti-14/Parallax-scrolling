@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Watches Parallax effect</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font: 13px;
+        font-family: sans-serif;
+      }
+      p {
+        line-height: 1.6;
+      }
+      strong {
+        font-weight: bold;
+      }
+      section:nth-of-type(1) {
+        height: 1200px;
+      }
+      section:nth-of-type(2) {
+        height: 1000px;
+      }
+      #secondSection > div:nth-of-type(1) {
+        background: url("https://st3.depositphotos.com/3203307/13396/v/600/depositphotos_133968440-stock-illustration-large-rose-gold-glitter-confetti.jpg")
+          100% 0 no-repeat fixed;
+        margin: 0;
+        height: 1600px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+      }
+      #secondSection > div:nth-of-type(2) {
+        background: url("./watch1.png") 50% 0 no-repeat fixed;
+        margin: 0;
+        height: 1600px;
+        position: absolute;
+        width: 100%;
+        left: 100px;
+      }
+      #bottle > div:nth-of-type(1) {
+        background: url("https://i.ebayimg.com/images/g/tLMAAOSwcUFdwEdu/s-l1600.jpg")
+          50% 0% no-repeat fixed;
+        margin: 0;
+        height: 1200px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+      }
+      section h1 {
+        color: palevioletred;
+        width: 400px;
+        font-size: 35px;
+        margin-bottom: 14px;
+      }
+      section p {
+        color: white;
+        width: 300px;
+      }
+      section article {
+        position: absolute;
+        top: 30%;
+        right: 10px;
+        width: 500px;
+        z-index: 4;
+      }
+      section article.two {
+        position: absolute;
+        top: 240px;
+        left: 40px;
+        width: 500px;
+        z-index: 4;
+      }
+      section {
+        position: relative;
+        width: 100% !important;
+        min-width: 1000px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="bottle">
+      <article>
+        <h1>It's time to shine</h1>
+        <p>
+          <strong> Lorem ipsum dolor sit. </strong>Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Modi nihil laborum perferendis soluta
+          iste fuga dolorum, eos sunt quam blanditiis obcaecati inventore sequi
+          non culpa exercitationem, architecto incidunt voluptatum sint.
+        </p>
+      </article>
+      <div class="parallax" data-velocity="-.3"></div>
+    </section>
+
+    <section id="secondSection">
+      <article class="two">
+        <h1>Premium Collection is out</h1>
+        <p>
+          <strong> Lorem ipsum dolor sit. </strong>Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Modi nihil laborum perferendis soluta
+          iste fuga dolorum, eos sunt quam blanditiis obcaecati inventore sequi
+          non culpa exercitationem, architecto incidunt voluptatum sint.
+        </p>
+      </article>
+      <div class="parallax" data-velocity="-.1"></div>
+      <div class="parallax" data-velocity="-.5" data-fit="800"></div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./jquery.scrolly.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".parallax").scrolly({ bgParallax: true });
+      });
+    </script>
+  </body>
+</html>

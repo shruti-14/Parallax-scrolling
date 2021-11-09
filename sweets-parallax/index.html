@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jarallax.css" />
+    <title>Sweets-parallax</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        background: #111;
+        padding-bottom: 300px;
+        overflow-x: hidden;
+      }
+      body:before {
+        content: "Indian Sweets";
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 9em;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke: 1px #555;
+      }
+      section {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      section h2 {
+        margin-left: 200px;
+        font-size: 8em;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      section .container {
+        position: relative;
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      section:nth-child(even) .container {
+        flex-direction: row-reverse;
+      }
+      section .container .imgBox {
+        position: relative;
+        width: 800px;
+        height: 400px;
+        overflow: hidden;
+        box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+      }
+      section .container .imgBox img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      section .container .content {
+        position: absolute;
+        right: 0;
+        margin-top: 200px;
+        margin-bottom: 40px;
+        padding: 40px;
+        background: #333;
+        z-index: 1;
+        max-width: 400px;
+        color: #fff;
+        box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+        border-bottom: 6px solid rgb(17, 107, 107);
+      }
+      section:nth-child(even) .container .content {
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box">
+        <h2 data-jarallax-element="0 -200">Gulab Jamun</h2>
+        <div class="container">
+          <div class="imgBox jarallax">
+            <img
+              src="https://image.winudf.com/v2/image/Y29tLmNoZWVrdW1lZWt1bGFicy5hbGl5YWFuLkd1bGFiSmFtdW5FbmdsaXNoUmVjaXBpZXNfc2NyZWVuc2hvdHNfMF81YWQ3NjUwMg/screen-0.jpg?fakeurl=1&type=.jpg"
+              alt=""
+              class="jarallax-img"
+            />
+          </div>
+          <div class="content" data-jarallax-element="-200 0">
+            <p>
+              Gulab jamun is a milk-solid-based sweet, originating in India and
+              a type of mithai popular in India, Nepal, Pakistan, the Maldives,
+              and Bangladesh, as well as Myanmar. These round, milk-based sweets
+              soak in sugar syrup. To say they taste sweet would be an
+              understatement. As they melt in your mouth you are hit with the
+              sweet flavor of milk and sugar and a hint of the rose and cardamom
+              in the sugar syrup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="box">
+        <h2 data-jarallax-element="0 200">Kaju Katli</h2>
+        <div class="container">
+          <div class="imgBox jarallax">
+            <img
+              src="https://i.ndtvimg.com/i/2017-08/kaju-barfi_650x400_71501923806.jpg"
+              alt=""
+              class="jarallax-img"
+            />
+          </div>
+          <div class="content" data-jarallax-element="-200 0">
+            <p>
+              Kaju katli, also known as kaju barfi, is an Indian dessert similar
+              to a barfi. Kaju means cashew; Barfi is often, but not always,
+              made by thickening milk with sugar and other ingredients. Kesar
+              kaju katli is a kaju katli recipe that includes
+              saffron.Cashew-rich homemade kaju katli are good for heart health
+              as far as you consume them in a healthy way and avoid overeating.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="box">
+        <h2 data-jarallax-element="0 -200">Rabdi Jalebi</h2>
+        <div class="container">
+          <div class="imgBox jarallax">
+            <img
+              src="https://www.carveyourcraving.com/wp-content/uploads/2020/10/Jalebi-Rabri.jpg"
+              alt=""
+              class="jarallax-img"
+            />
+          </div>
+          <div class="content" data-jarallax-element="-200 0">
+            <p>
+              Rabri also known as rabdi is a North Indian traditional sweet dish
+              made with full fat milk, sugar, cardamoms and nuts. It is served
+              as a dessert or along with malpua, gulab jamun, jalebi and puri.
+              Rabri tastes very delicious, creamy & is full of flavors from the
+              cardamoms and saffron.Traditionally, the jalebi recipe is made
+              with a batter of all purpose flour, gram flour (besan), baking
+              soda and water that is fermented for several hours. The fermented
+              batter is then poured in concentric circles in hot oil and
+              deep-fried. These fried spirals are then soaked in a flavored
+              sugar syrup and served.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="box">
+        <h2 data-jarallax-element="0 200">Malai barfi</h2>
+        <div class="container">
+          <div class="imgBox jarallax">
+            <img
+              src="https://i.ytimg.com/vi/9C_vIUepudY/hqdefault.jpg"
+              alt=""
+              class="jarallax-img"
+            />
+          </div>
+          <div class="content" data-jarallax-element="-200 0">
+            <p>
+              Barfi, or burfi, is one of the most popular mithais (sweets) in
+              India. Barf literally translates to ice in Hindi, so it's named
+              barfi for its white appearance and cooling properties from the
+              milk base. It has a base of milk powder or khoya (milk solids),
+              milk, ghee, and sugar.A popular creamy fudge or barfi recipe made
+              with full cream, paneer and condensed milk. it is a popular north
+              indian dessert recipe which is typically made during the festival
+              season to share with friends and family.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="jarallax.js"></script>
+    <script src="jarallax-element.js"></script>
+    <script>
+      jarallax(document.querySelectorAll(".jarallax"), {
+        speed: 0.5,
+      });
+    </script>
+  </body>
+</html>
